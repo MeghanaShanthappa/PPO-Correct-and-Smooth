@@ -1,0 +1,28 @@
+[
+  {
+    "source": "https://archive.org/download/gradbert_embeddings/embeddings.zip",
+    "author_mirror_reference": "https://github.com/cmavro/GRAD/issues/1#issuecomment-1553526371",
+    "member": "embeddings/ogbn-products/giant_feats.npy",
+    "bytes": 7523417216,
+    "crc32": 1522388008,
+    "sha256": "946f4a5de9f020bc36cafb7f7debdc813311781f4c73358f89d93c43ba46fab8",
+    "shape": [
+      2449029,
+      768
+    ],
+    "dtype": "float32"
+  },
+  {
+    "source": "https://archive.org/download/gradbert_embeddings/embeddings.zip",
+    "author_mirror_reference": "https://github.com/cmavro/GRAD/issues/1#issuecomment-1553526371",
+    "member": "embeddings/ogbn-products/gradbert_kd_feats.npy",
+    "bytes": 7523417216,
+    "crc32": 2949991870,
+    "sha256": "6afe90c6e9d785b242129b1d823d83db85ccc311ab47c663358916205646bbbe",
+    "shape": [
+      2449029,
+      768
+    ],
+    "dtype": "float32"
+  }
+]

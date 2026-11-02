@@ -1,62 +1,73 @@
 # RL Correct & Smooth
 
-Research prototype for node-wise reinforcement-learning control of graph
-post-processing. It does **not** use a built-in GNN or RL implementation.
+**Learning to select graph post-processing settings for individual nodes.**
 
-At every step, each active node chooses one action:
+**Authors:** Meghana Shanthappa, Chandan, Rishi, and Junhao
 
-- `KEEP`: retain the current prediction and reconsider next step.
-- `CORRECT`: propagate residual errors from labeled anchor nodes.
-- `SMOOTH`: move toward neighboring predictions.
-- `CONTRAST`: move away from neighboring predictions for heterophily.
-- `STOP`: retain the prediction and stop processing this node.
+This project investigates whether a warm-started PPO controller can improve
+Correct and Smooth (C&S) by choosing among precomputed candidate predictions
+for each node. The completed experiments use MLP base classifiers on
+ogbn-products and ogbn-arxiv.
 
-The policy observes the current and base predictions, confidence, entropy,
-neighbor disagreement, normalized degree, correction magnitude, and step. It is
-trained with REINFORCE on a masked subset of training labels. The reward is the
-change in true-class log probability minus a small computation cost.
+## Results at a glance
 
-## Quick smoke test
+| Experiment | Split | Fixed C&S | PPO + C&S | Gain (percentage points) |
+|---|---|---:|---:|---:|
+| Revised ogbn-arxiv, 3 base seeds | Test | 68.804% | **69.064%** | **+0.260** |
+| Revised ogbn-products, 3 base seeds | Validation | 91.518% | 91.842% | +0.324 |
+| Earlier ogbn-products, 10 base seeds | Test | 84.207% | 81.740% | −2.467 |
 
-```bash
-python3 -m unittest discover -s tests -v
-python3 rl_correct_smooth.py \
-  --dataset synthetic \
-  --base-epochs 200 \
-  --policy-epochs 300 \
-  --output outputs/synthetic
+Five actor seeds are averaged within each base seed. The revised Products
+variant has no final-test score. Validation is used for checkpoint selection.
+These results do not establish that PPO generally outperforms C&S or simpler
+learned selectors.
+
+## How it works
+
+```mermaid
+flowchart LR
+    X[Node features] --> M[MLP]
+    M --> B[Five C&S candidates]
+    G[Graph and training anchors] --> B
+    B --> S[Prediction and graph statistics]
+    S --> A[Warm-started PPO selector]
+    A --> O[One candidate per node]
+    B --> O
 ```
 
-## OGBN-Arxiv
+The graph candidates are computed before selection. This is a one-step
+contextual decision, not sequential adaptive propagation.
 
-Install dependencies in your Python environment:
+## Read the report
 
-```bash
-python3 -m pip install -r requirements.txt
-```
+- [Full report: method, worked example, diagrams, results and limitations](PROJECT_REPORT.md)
+- [Reproducibility guide](REPRODUCIBILITY.md)
+- [Author credits](AUTHORS.md)
+- [Saved experiment summaries](results/)
 
-Run the experiment:
+## Implementations
 
-```bash
-python3 rl_correct_smooth.py \
-  --dataset ogbn-arxiv \
-  --data-root "$HOME/ogb-data" \
-  --base-epochs 500 \
-  --policy-epochs 500 \
-  --policy-steps 5 \
-  --output outputs/ogbn-arxiv
-```
+The existing root `rl_correct_smooth.py` is an earlier **sequential REINFORCE
+prototype**. It is distinct from the completed PPO experiments and its output
+must not be attributed to the reported PPO scores. Its original usage notes
+are preserved in [docs/SEQUENTIAL_PROTOTYPE.md](docs/SEQUENTIAL_PROTOTYPE.md).
 
-The command writes `metrics.json` and `policy.pt`. Metrics include the base MLP,
-fixed correction, fixed smoothing, fixed Correct-and-Smooth, and learned policy.
-The OGB data directory can
-be large, so keep it on persistent high-capacity storage rather than `$HOME` or
-a temporary filesystem.
+The completed experiment source is in `experiments/candidate-selection/` in
+the GitHub repository. The local research checkout retains those scripts at
+its root. The archive includes protocols, source revision records, and tests;
+large datasets, trained models, and candidate banks are not bundled. Historical
+scripts contain machine-specific paths and require adaptation before reuse.
 
-## Important experimental note
+## Scientific scope
 
-The base MLP and correction anchors use only part of the official training
-labels. The remaining training labels are hidden and used as policy rewards.
-Validation and test labels are never used to train the policy. This first
-prototype should be compared against fixed C&S, NDLS, and a differentiable
-action gate before making performance or novelty claims.
+PPO improves our recorded fixed baseline on Arxiv test. Direct expected-reward
+optimization performs similarly, and slightly exceeds PPO on revised Products
+validation. We retain the earlier negative test result and all control methods.
+See the full report for experimental boundaries and remaining work.
+
+## References
+
+- [Correct and Smooth](https://arxiv.org/abs/2010.13993)
+- [Original C&S implementation](https://github.com/Chillee/CorrectAndSmooth)
+- [Open Graph Benchmark](https://ogb.stanford.edu/docs/nodeprop/)
+- [PPO](https://arxiv.org/abs/1707.06347)

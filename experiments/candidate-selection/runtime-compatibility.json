@@ -1,0 +1,11 @@
+{
+  "library": "/var/tmp/mshanthappa/rl-cs/grad-venv/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so",
+  "reason": "Host rejects executable-stack flag in legacy PyTorch binary; clear PT_GNU_STACK PF_X only",
+  "changes": [
+    {
+      "offset": 124,
+      "old_flags": 7,
+      "new_flags": 6
+    }
+  ]
+}

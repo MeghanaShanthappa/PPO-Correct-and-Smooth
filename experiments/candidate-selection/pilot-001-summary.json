@@ -1,0 +1,24 @@
+{
+  "scope": "Historical hybrid-stack ensemble, exploratory official-validation resplit; not exact leaderboard reproduction or untouched validation.",
+  "official_test_labels_loaded_or_scored": false,
+  "policy_split_sizes": [
+    23593,
+    7865,
+    7865
+  ],
+  "baseline_raw_accuracy": 0.942148745059967,
+  "baseline_cs_accuracy": 0.9452002644538879,
+  "oracle_accuracy_upper_bound": 0.9502860903739929,
+  "methods": {
+    "supervised": {
+      "mean_accuracy": 0.9455562619198983,
+      "sample_std": 0.0002445694095571452,
+      "mean_gain_pp": 0.03559974660103382
+    },
+    "ppo": {
+      "mean_accuracy": 0.9455816910362366,
+      "sample_std": 1.2412670766236366e-16,
+      "mean_gain_pp": 0.03814265823486318
+    }
+  }
+}

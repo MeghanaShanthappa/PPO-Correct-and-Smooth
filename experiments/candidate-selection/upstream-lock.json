@@ -1,0 +1,32 @@
+{
+  "LD": {
+    "url": "https://github.com/MIRALab-USTC/LD.git",
+    "commit": "cf2804b08c1cb4453ca7950d9f20b3d3bc7a43e4",
+    "path": "/var/tmp/mshanthappa/rl-cs/upstream/LD",
+    "status": "source cloned; exact numerical reproduction not complete"
+  },
+  "SCR": {
+    "url": "https://github.com/THUDM/SCR.git",
+    "commit": "13258a8d272bb02eb99193b4e8b1fea56a850b19",
+    "path": "/var/tmp/mshanthappa/rl-cs/upstream/SCR",
+    "status": "source cloned; exact numerical reproduction not complete"
+  },
+  "GRAD": {
+    "url": "https://github.com/cmavro/GRAD.git",
+    "commit": "95f20ea94f7204fc4f813fc8239f4ba68c3956a3",
+    "path": "/var/tmp/mshanthappa/rl-cs/upstream/GRAD",
+    "status": "source cloned; exact numerical reproduction not complete"
+  },
+  "RandomAttention": {
+    "url": "https://github.com/Eigenworld/RandomAttention.git",
+    "commit": "8cc3ed2dcc0065e7c2970b010177f61e311e0480",
+    "path": "/var/tmp/mshanthappa/rl-cs/upstream/RandomAttention",
+    "status": "source cloned; exact numerical reproduction not complete"
+  },
+  "CorrectAndSmooth": {
+    "url": "https://github.com/Chillee/CorrectAndSmooth.git",
+    "commit": "b910314a59270984f5e249462ee3faa815fc9a0c",
+    "path": "/var/tmp/mshanthappa/rl-cs/upstream/CorrectAndSmooth",
+    "status": "original-source MLP/C&S reproduction in progress"
+  }
+}

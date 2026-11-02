@@ -1,0 +1,292 @@
+{
+  "dataset": "ogbn-arxiv",
+  "base_seeds": 3,
+  "actors_per_base": 5,
+  "test_nodes": 48603,
+  "official_test_scored": true,
+  "per_seed": [
+    {
+      "base_seed": 0,
+      "fixed_cs_accuracy": 0.6885788943069358,
+      "validation_selected_global_accuracy": 0.6895047630804683,
+      "actors": [
+        {
+          "method": "ppo",
+          "actor_seed": 20,
+          "accuracy": 0.6910684525646565
+        },
+        {
+          "method": "ppo",
+          "actor_seed": 21,
+          "accuracy": 0.6911096022879246
+        },
+        {
+          "method": "ppo",
+          "actor_seed": 22,
+          "accuracy": 0.6910890274262905
+        },
+        {
+          "method": "ppo",
+          "actor_seed": 23,
+          "accuracy": 0.6902454580992943
+        },
+        {
+          "method": "ppo",
+          "actor_seed": 24,
+          "accuracy": 0.6909655782564862
+        },
+        {
+          "method": "supervised",
+          "actor_seed": 20,
+          "accuracy": 0.6899162603131493
+        },
+        {
+          "method": "supervised",
+          "actor_seed": 21,
+          "accuracy": 0.6901837335143921
+        },
+        {
+          "method": "supervised",
+          "actor_seed": 22,
+          "accuracy": 0.6906158056087073
+        },
+        {
+          "method": "supervised",
+          "actor_seed": 23,
+          "accuracy": 0.690163158652758
+        },
+        {
+          "method": "supervised",
+          "actor_seed": 24,
+          "accuracy": 0.6896693619735407
+        },
+        {
+          "method": "expected_reward",
+          "actor_seed": 20,
+          "accuracy": 0.6910067279797544
+        },
+        {
+          "method": "expected_reward",
+          "actor_seed": 21,
+          "accuracy": 0.691233051457729
+        },
+        {
+          "method": "expected_reward",
+          "actor_seed": 22,
+          "accuracy": 0.6907598296401457
+        },
+        {
+          "method": "expected_reward",
+          "actor_seed": 23,
+          "accuracy": 0.691623973828776
+        },
+        {
+          "method": "expected_reward",
+          "actor_seed": 24,
+          "accuracy": 0.6904512067156349
+        }
+      ],
+      "ppo_mean_accuracy": 0.6908956237269304,
+      "supervised_mean_accuracy": 0.6901096640125095,
+      "expected_reward_mean_accuracy": 0.691014957924408,
+      "ppo_gain_pp": 0.2316729419994612
+    },
+    {
+      "base_seed": 1,
+      "fixed_cs_accuracy": 0.6878999238730119,
+      "validation_selected_global_accuracy": 0.6883937205522292,
+      "actors": [
+        {
+          "method": "ppo",
+          "actor_seed": 20,
+          "accuracy": 0.6907392547785116
+        },
+        {
+          "method": "ppo",
+          "actor_seed": 21,
+          "accuracy": 0.6909655782564862
+        },
+        {
+          "method": "ppo",
+          "actor_seed": 22,
+          "accuracy": 0.6904923564389029
+        },
+        {
+          "method": "ppo",
+          "actor_seed": 23,
+          "accuracy": 0.6912124765960949
+        },
+        {
+          "method": "ppo",
+          "actor_seed": 24,
+          "accuracy": 0.6901014340678558
+        },
+        {
+          "method": "supervised",
+          "actor_seed": 20,
+          "accuracy": 0.6903689072690986
+        },
+        {
+          "method": "supervised",
+          "actor_seed": 21,
+          "accuracy": 0.6901220089294899
+        },
+        {
+          "method": "supervised",
+          "actor_seed": 22,
+          "accuracy": 0.6906775301936094
+        },
+        {
+          "method": "supervised",
+          "actor_seed": 23,
+          "accuracy": 0.6905952307470732
+        },
+        {
+          "method": "supervised",
+          "actor_seed": 24,
+          "accuracy": 0.6892578647408596
+        },
+        {
+          "method": "expected_reward",
+          "actor_seed": 20,
+          "accuracy": 0.6906775301936094
+        },
+        {
+          "method": "expected_reward",
+          "actor_seed": 21,
+          "accuracy": 0.6904512067156349
+        },
+        {
+          "method": "expected_reward",
+          "actor_seed": 22,
+          "accuracy": 0.6908009793634138
+        },
+        {
+          "method": "expected_reward",
+          "actor_seed": 23,
+          "accuracy": 0.6907804045017797
+        },
+        {
+          "method": "expected_reward",
+          "actor_seed": 24,
+          "accuracy": 0.6903483324074645
+        }
+      ],
+      "ppo_mean_accuracy": 0.6907022200275702,
+      "supervised_mean_accuracy": 0.6902043083760262,
+      "expected_reward_mean_accuracy": 0.6906116906363804,
+      "ppo_gain_pp": 0.28022961545582925
+    },
+    {
+      "base_seed": 2,
+      "fixed_cs_accuracy": 0.6876324506717693,
+      "validation_selected_global_accuracy": 0.688661193753472,
+      "actors": [
+        {
+          "method": "ppo",
+          "actor_seed": 20,
+          "accuracy": 0.6903277575458305
+        },
+        {
+          "method": "ppo",
+          "actor_seed": 21,
+          "accuracy": 0.6908009793634138
+        },
+        {
+          "method": "ppo",
+          "actor_seed": 22,
+          "accuracy": 0.6900397094829537
+        },
+        {
+          "method": "ppo",
+          "actor_seed": 23,
+          "accuracy": 0.6902454580992943
+        },
+        {
+          "method": "ppo",
+          "actor_seed": 24,
+          "accuracy": 0.690142583791124
+        },
+        {
+          "method": "supervised",
+          "actor_seed": 20,
+          "accuracy": 0.6890109664012509
+        },
+        {
+          "method": "supervised",
+          "actor_seed": 21,
+          "accuracy": 0.6895870625270045
+        },
+        {
+          "method": "supervised",
+          "actor_seed": 22,
+          "accuracy": 0.6896076373886386
+        },
+        {
+          "method": "supervised",
+          "actor_seed": 23,
+          "accuracy": 0.6892578647408596
+        },
+        {
+          "method": "supervised",
+          "actor_seed": 24,
+          "accuracy": 0.68936073904903
+        },
+        {
+          "method": "expected_reward",
+          "actor_seed": 20,
+          "accuracy": 0.6904306318540008
+        },
+        {
+          "method": "expected_reward",
+          "actor_seed": 21,
+          "accuracy": 0.6903277575458305
+        },
+        {
+          "method": "expected_reward",
+          "actor_seed": 22,
+          "accuracy": 0.6903071826841964
+        },
+        {
+          "method": "expected_reward",
+          "actor_seed": 23,
+          "accuracy": 0.6892578647408596
+        },
+        {
+          "method": "expected_reward",
+          "actor_seed": 24,
+          "accuracy": 0.6892578647408596
+        }
+      ],
+      "ppo_mean_accuracy": 0.6903112976565233,
+      "supervised_mean_accuracy": 0.6893648540213567,
+      "expected_reward_mean_accuracy": 0.6899162603131493,
+      "ppo_gain_pp": 0.26788469847540686
+    }
+  ],
+  "lock_sha256": "6e7d54806a9e5087f5f246c44757bc4680184a6a2035520abf6f0fba31f186ca",
+  "fixed_cs_accuracy": {
+    "mean": 0.688037089617239,
+    "sample_std_across_base_seeds": 0.0004879033917476031
+  },
+  "ppo_mean_accuracy": {
+    "mean": 0.6906363804703414,
+    "sample_std_across_base_seeds": 0.0002976749479069513
+  },
+  "supervised_mean_accuracy": {
+    "mean": 0.6898929421366308,
+    "sample_std_across_base_seeds": 0.000459779492807882
+  },
+  "expected_reward_mean_accuracy": {
+    "mean": 0.6905143029579793,
+    "sample_std_across_base_seeds": 0.0005557853724007689
+  },
+  "validation_selected_global_accuracy": {
+    "mean": 0.6888532257953899,
+    "sample_std_across_base_seeds": 0.0005798802494750824
+  },
+  "ppo_gain_pp": {
+    "mean": 0.25992908531023245,
+    "sample_std_across_base_seeds": 0.025237005961732305
+  }
+}

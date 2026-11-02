@@ -1,0 +1,157 @@
+{
+  "experiment": "small_cs_v1",
+  "planned_base_seeds": 3,
+  "completed_base_seeds": 3,
+  "official_test_scored": false,
+  "scope": "exploratory full official validation; used for checkpoint selection",
+  "per_seed": [
+    {
+      "scope": "MLP train-OOF policy rewards; full-validation checkpoint selection; no official-test scoring",
+      "base_seed": 0,
+      "selection_nodes": 39323,
+      "diagnostic_scored": null,
+      "official_test_scored": false,
+      "evaluation_split": "full official validation, used for checkpoint selection",
+      "global_actions": {
+        "scale9": 0.9164611041883884,
+        "fixed_cs": 0.9151895837041935,
+        "scale11": 0.9145029626427281,
+        "smooth075": 0.917351168527325,
+        "smooth085": 0.9129771380616942
+      },
+      "best_global_action": "smooth075",
+      "best_global_selection_accuracy": 0.917351168527325,
+      "methods": {
+        "warm_start": {
+          "mean_accuracy": 0.9183836431604913,
+          "std": 0.00012275277457111342,
+          "gain_over_fixed_cs_pp": 0.3194059456297804,
+          "gain_over_best_global_pp": 0.10324746331662471
+        },
+        "supervised": {
+          "mean_accuracy": 0.9183938153243648,
+          "std": 0.00011372824949774751,
+          "gain_over_fixed_cs_pp": 0.32042316201713605,
+          "gain_over_best_global_pp": 0.10426467970398035
+        },
+        "expected_reward": {
+          "mean_accuracy": 0.9187091524044451,
+          "std": 0.00018125300390312842,
+          "gain_over_fixed_cs_pp": 0.35195687002516074,
+          "gain_over_best_global_pp": 0.13579838771200503
+        },
+        "ppo": {
+          "mean_accuracy": 0.9186837219947612,
+          "std": 0.00013528404321408213,
+          "gain_over_fixed_cs_pp": 0.3494138290567772,
+          "gain_over_best_global_pp": 0.1332553467436215
+        }
+      }
+    },
+    {
+      "scope": "MLP train-OOF policy rewards; full-validation checkpoint selection; no official-test scoring",
+      "base_seed": 1,
+      "selection_nodes": 39323,
+      "diagnostic_scored": null,
+      "official_test_scored": false,
+      "evaluation_split": "full official validation, used for checkpoint selection",
+      "global_actions": {
+        "scale9": 0.9169697123820665,
+        "fixed_cs": 0.9159524959947105,
+        "scale11": 0.9148589883783028,
+        "smooth075": 0.9170205732014343,
+        "smooth085": 0.9139434936296824
+      },
+      "best_global_action": "smooth075",
+      "best_global_selection_accuracy": 0.9170205732014343,
+      "methods": {
+        "warm_start": {
+          "mean_accuracy": 0.9179208097042444,
+          "std": 0.000187392960119443,
+          "gain_over_fixed_cs_pp": 0.19683137095338754,
+          "gain_over_best_global_pp": 0.09002365028101256
+        },
+        "supervised": {
+          "mean_accuracy": 0.9180428756707271,
+          "std": 9.062650195158095e-05,
+          "gain_over_fixed_cs_pp": 0.20903796760165516,
+          "gain_over_best_global_pp": 0.10223024692928018
+        },
+        "expected_reward": {
+          "mean_accuracy": 0.9181293390636525,
+          "std": 0.000178556973593483,
+          "gain_over_fixed_cs_pp": 0.2176843068941947,
+          "gain_over_best_global_pp": 0.11087658622181973
+        },
+        "ppo": {
+          "mean_accuracy": 0.918114080817842,
+          "std": 0.00011372824949776614,
+          "gain_over_fixed_cs_pp": 0.2161584823131446,
+          "gain_over_best_global_pp": 0.10935076164076962
+        }
+      }
+    },
+    {
+      "scope": "MLP train-OOF policy rewards; full-validation checkpoint selection; no official-test scoring",
+      "base_seed": 2,
+      "selection_nodes": 39323,
+      "diagnostic_scored": null,
+      "official_test_scored": false,
+      "evaluation_split": "full official validation, used for checkpoint selection",
+      "global_actions": {
+        "scale9": 0.9159524959947105,
+        "fixed_cs": 0.9144012410039926,
+        "scale11": 0.9131805813391654,
+        "smooth075": 0.9170460036111182,
+        "smooth085": 0.912748264374539
+      },
+      "best_global_action": "smooth075",
+      "best_global_selection_accuracy": 0.9170460036111182,
+      "methods": {
+        "warm_start": {
+          "mean_accuracy": 0.9182615771940086,
+          "std": 0.0001338422538152098,
+          "gain_over_fixed_cs_pp": 0.38603361900160227,
+          "gain_over_best_global_pp": 0.12155735828903724
+        },
+        "supervised": {
+          "mean_accuracy": 0.9183226101772501,
+          "std": 0.00014090374770178216,
+          "gain_over_fixed_cs_pp": 0.3921369173257583,
+          "gain_over_best_global_pp": 0.12766065661319326
+        },
+        "expected_reward": {
+          "mean_accuracy": 0.9186582915850774,
+          "std": 0.0001500178643923659,
+          "gain_over_fixed_cs_pp": 0.42570505810848314,
+          "gain_over_best_global_pp": 0.1612287973959181
+        },
+        "ppo": {
+          "mean_accuracy": 0.918459934389543,
+          "std": 0.0001173662310527392,
+          "gain_over_fixed_cs_pp": 0.4058693385550427,
+          "gain_over_best_global_pp": 0.14139307784247768
+        }
+      }
+    }
+  ],
+  "fixed_cs_mean": 0.9151811069009655,
+  "methods": {
+    "warm_start": {
+      "mean_validation_accuracy": 0.9181886766862482,
+      "mean_gain_pp": 0.3007569785282567
+    },
+    "supervised": {
+      "mean_validation_accuracy": 0.9182531003907807,
+      "mean_gain_pp": 0.3071993489815165
+    },
+    "expected_reward": {
+      "mean_validation_accuracy": 0.9184989276843917,
+      "mean_gain_pp": 0.33178207834261286
+    },
+    "ppo": {
+      "mean_validation_accuracy": 0.9184192457340488,
+      "mean_gain_pp": 0.3238138833083215
+    }
+  }
+}

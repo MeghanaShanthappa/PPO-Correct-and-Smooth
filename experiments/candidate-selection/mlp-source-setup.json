@@ -1,0 +1,9 @@
+{
+  "MLP_PROTOCOL.md": "07121b9966dcb9240b641b957e89e94b37ba1deeb8567bab79a3d6f990cfbbd8",
+  "mlp_support.py": "cc3f8969a3c78a188e27f49cefa38dbce247937498c2a1d957fbc28239835f75",
+  "prepare_mlp_spectral.py": "859d24b509e3730aa208b9bdfe04c14070aeca198e7d08cf5ca0f9245cd3ec5d",
+  "run_mlp_seed.py": "188b5f404bd5c0ab0b556b22d91b7eca43e350ddb41947778aeeb4c709e07be9",
+  "train_v2.py": "a8bd0774c2ad6300a3254d2f3cba325506733eb3890c5e533c6fab58f3bb5e6a",
+  "prepare_v2.py": "4efcd49e5a2da054778f8c198b346a07d001de832e80a0c65ad230102cc1f7a6",
+  "evaluate_mlp_test_once.py": "02489ff2d98f45c8dccfc486405523ba4ea205cdb35420286d98f55d9e327e5b"
+}

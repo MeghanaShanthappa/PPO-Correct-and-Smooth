@@ -1,0 +1,86 @@
+[
+  {
+    "name": "embeddings/",
+    "bytes": 0,
+    "compressed_bytes": 0,
+    "crc32": 0,
+    "offset": 0
+  },
+  {
+    "name": "embeddings/ogbn-arxiv/",
+    "bytes": 0,
+    "compressed_bytes": 0,
+    "crc32": 0,
+    "offset": 69
+  },
+  {
+    "name": "embeddings/ogbn-arxiv/giant_feats.npy",
+    "bytes": 520221824,
+    "compressed_bytes": 481494816,
+    "crc32": 2627149658,
+    "offset": 149
+  },
+  {
+    "name": "embeddings/ogbn-arxiv/gradbert_feats.npy",
+    "bytes": 520221824,
+    "compressed_bytes": 482335181,
+    "crc32": 752484034,
+    "offset": 481495060
+  },
+  {
+    "name": "embeddings/ogbn-arxiv/gradbert_kd_feats.npy",
+    "bytes": 520221824,
+    "compressed_bytes": 481316753,
+    "crc32": 437113597,
+    "offset": 963830339
+  },
+  {
+    "name": "embeddings/ogbn-products/",
+    "bytes": 0,
+    "compressed_bytes": 0,
+    "crc32": 0,
+    "offset": 1445147193
+  },
+  {
+    "name": "embeddings/ogbn-products/giant_feats.npy",
+    "bytes": 7523417216,
+    "compressed_bytes": 6980251720,
+    "crc32": 1522388008,
+    "offset": 1445147276
+  },
+  {
+    "name": "embeddings/ogbn-products/gradbert_feats.npy",
+    "bytes": 7523417216,
+    "compressed_bytes": 6962531077,
+    "crc32": 1198254943,
+    "offset": 8425399114
+  },
+  {
+    "name": "embeddings/ogbn-products/gradbert_kd_feats.npy",
+    "bytes": 7523417216,
+    "compressed_bytes": 6963370814,
+    "crc32": 2949991870,
+    "offset": 15387930312
+  },
+  {
+    "name": "embeddings/papers-small/",
+    "bytes": 0,
+    "compressed_bytes": 0,
+    "crc32": 0,
+    "offset": 22351301250
+  },
+  {
+    "name": "embeddings/papers-small/gradbert_feats.npy",
+    "bytes": 4751714432,
+    "compressed_bytes": 4348957305,
+    "crc32": 3583283302,
+    "offset": 22351301332
+  },
+  {
+    "name": "embeddings/papers-small/gradbert_kd_feats.npy",
+    "bytes": 4751714432,
+    "compressed_bytes": 4348980518,
+    "crc32": 674491950,
+    "offset": 26700258757
+  }
+]

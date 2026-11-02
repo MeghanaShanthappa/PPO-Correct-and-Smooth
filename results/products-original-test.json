@@ -1,0 +1,15 @@
+{
+  "base_seeds": 10,
+  "actors_per_base": 5,
+  "test_nodes": 2213091,
+  "baseline_mean": 0.8420687174634935,
+  "baseline_sample_std": 0.0007200944577405163,
+  "ppo_mean": 0.8173992754929644,
+  "ppo_sample_std_across_base_seeds": 0.0019846487676340612,
+  "validation_selected_global_mean": 0.8312213551092114,
+  "supervised_mean": 0.8162053254927158,
+  "paired_mean_gain_pp": -2.4669441970529027,
+  "paired_gain_sample_std_pp": 0.2382587651846764,
+  "lock_sha256": "8314b8f7e441211b43d1c37f691bc362fd7ba8c7ee99e35c6caa161e1357fd34",
+  "prior_exposure": "Published Products references and earlier unrelated Products experiments were known; this does not erase that history."
+}

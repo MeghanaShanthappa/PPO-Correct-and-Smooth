@@ -2,7 +2,7 @@
 
 **Learning to select graph post-processing settings for individual nodes.**
 
-**Authors:** Meghana Shanthappa, Chandan, Rishi, and Junhao
+**Authors:** Meghana Shanthappa, Chandan Bhagwat, Rishi Puri, and Junhao Shen
 
 This project investigates whether a warm-started PPO controller can improve
 Correct and Smooth (C&S) by choosing among precomputed candidate predictions

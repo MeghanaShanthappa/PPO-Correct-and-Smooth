@@ -1,6 +1,6 @@
 # Learning to Select Correct and Smooth Settings with PPO
 
-**Authors:** Meghana Shanthappa, Chandan, Rishi, and Junhao  
+**Authors:** Meghana Shanthappa, Chandan Bhagwat, Rishi Puri, and Junhao Shen
 **Status:** Experimental research report · November 2, 2026
 
 ## Abstract
